@@ -16,3 +16,7 @@ def quitar_palabras_vacias(tokens):
         if palabra not in palabras_vacias:
             resultado.append(palabra)
         return resultado
+<<<<<<< HEAD
+=======
+        
+>>>>>>> 0b587ee21499d1cc0dae6f79fdef2ac2ed85894b
