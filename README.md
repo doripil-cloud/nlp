@@ -47,4 +47,4 @@ Una herramienta sencilla en Python con interfaz gráfica para seleccionar archiv
 
 ## Autor
 
-* **poly** - *Desarrollo inicial*
+* **Paulina Alejandra Ramirez Olmos** - *Desarrollo inicial*
