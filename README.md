@@ -48,3 +48,40 @@ Una herramienta sencilla en Python con interfaz gráfica para seleccionar archiv
 ## Autor
 
 * **Paulina Alejandra Ramirez Olmos** - *Desarrollo inicial*
+
+# Limpieza de Datos
+
+Una herramienta sencilla en Python para limpiar un archivo de datos y dejarlo listo para el análisis correspondientes, eliminando las palabras vacían que hayan en el texto y remplazando los signos con espacios, para que no cuente palabras que estan juntas con un signo como una misma palabra.
+
+## Características
+
+- **Conversión a minúsculas:** Hace que una misma palabra escrita de diferentes formas cuente como una sola. EJEMPLO: "Hola" y "hola".
+- **Eliminación de signos de puntuación:** Reemplaza cada signo POR un espacio, para que si varias palabras están unidas por un signo de puntuación, las cuente como diferentes palabras. EJEMPLO: "hola,mundo" --> "hola mundo".
+- **Tokenización:** Separa el texto que ya se limpio en una lista.
+- **Filtrado de palabras vacias:** Elimina palabras que casi no aportan significado usando un `set`.
+
+## Funciones
+
+- **`limpiar_texto(texto):`** Pasa a minúsculas y quita los signos de puntuación.
+- **`tokenizar(texto):`** Limpia el texto y devuelve una lista de palabras.
+- **`quitar_palabras_vacias(tokens):`** Devuelve solo las palabras que no están en `palabras_vacias`.
+
+## Uso
+
+```python
+from limpieza import tokenizar, quitar_stop_words
+
+texto = "Hoy fue un día excelente. ¡Me encanta programar!"
+
+tokens = tokenizar(texto)
+print(tokens)
+# ['hoy', 'fue', 'un', 'día', 'excelente', 'me', 'encanta', 'programar']
+
+utiles = quitar_stop_words(tokens)
+print(utiles)
+# ['hoy', 'día', 'excelente', 'encanta', 'programar']
+```
+
+## Autor
+
+- **Fernanda Narahi Rayas Flores** - *Código de limpieza*
