@@ -8,6 +8,7 @@ Created on Thu Nov 19 20:52:45 2026
 
 from lector import seleccionar_archivo, leer_archivo
 from procesar import cuenta_palabras
+from limpieza import limpiar_texto, tokenizar, quitar_palabras_vacias
 
 archivo = seleccionar_archivo()
 texto = leer_archivo(archivo)
