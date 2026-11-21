@@ -48,6 +48,7 @@ Una herramienta sencilla en Python con interfaz gráfica para seleccionar archiv
 ## Autor
 
 * **Paulina Alejandra Ramirez Olmos** - *Desarrollo inicial*
+* **Fernanda Rayas**
 
 # Limpieza de Datos
 
