@@ -69,7 +69,6 @@ Una herramienta sencilla en Python para limpiar un archivo de datos y dejarlo li
 ## Uso
 
 ```python
-from limpieza import tokenizar, quitar_stop_words
 
 texto = "Hoy fue un día excelente. ¡Me encanta programar!"
 
@@ -77,7 +76,7 @@ tokens = tokenizar(texto)
 print(tokens)
 # ['hoy', 'fue', 'un', 'día', 'excelente', 'me', 'encanta', 'programar']
 
-utiles = quitar_stop_words(tokens)
+utiles = quitar_palabras_vacias(tokens)
 print(utiles)
 # ['hoy', 'día', 'excelente', 'encanta', 'programar']
 ```
