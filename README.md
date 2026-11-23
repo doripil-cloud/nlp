@@ -50,9 +50,7 @@ Una herramienta sencilla en Python con interfaz gráfica para seleccionar archiv
     Palabras:  ====================
     Totales:         13129
     Sin stop/words:  6269   
-       Caracteres con espacios:  150
-       Caracteres sin espacios:  125
-       Palabras:  26
+
    ```
 
 ## Autor
