@@ -8,6 +8,10 @@ Una herramienta sencilla en Python con interfaz gráfica para seleccionar archiv
 * **Conteo de caracteres:** Calcula el total de caracteres incluyendo y excluyendo espacios en blanco.
 * **Conteo de palabras:** Analiza el contenido y devuelve el total de palabras.
 * **Diseño modular:** Separación de responsabilidades entre lectura de archivos, procesamiento de datos y ejecución principal.
+*  El Type-Token Ratio (TTR) se calcula dividiendo el número de palabras únicas (types) entre el total de palabras (tokens) en el texto.
+\(\text{TTR}=\frac{\text{Palabras únicas (Types)}}{\text{Total\ de\ palabras\ (Tokens)}}\)
+El resultado es un valor entre 0 y 1 (donde 1 significa que ninguna palabra se repite).
+
 
 ## Estructura del Proyecto
 
