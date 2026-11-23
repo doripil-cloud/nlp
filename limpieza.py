@@ -23,7 +23,7 @@ palabras_vacias = {
 	"ser", "estar", "haber", "tener", "hacer", "poder", "deber",
 	"querer", "ir", "dar", "decir", "soy", "eres", "es", "somos","son","era", 
 	"eran", "fui", "fue", "han", "he", "hemos", "había", "has", "hay", "está", 
-    "están", "estaba", "tengo", "tiene", "tienen", "pueden", "hacer", "hace"
+    "están", "estaba", "tengo", "tiene", "tienen", "pueden", "hacer", "hace","su"
 }
 
 signos = ".,;:!?¿¡\"'()[]{}-—…«»_*/\\"
