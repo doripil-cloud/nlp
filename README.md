@@ -41,9 +41,18 @@ Una herramienta sencilla en Python con interfaz gráfica para seleccionar archiv
 
 4. Visualiza el resumen directamente en tu terminal:
    ```text
-   Caracteres con espacios:  150
-   Caracteres sin espacios:  125
-   Palabras:  26
+    Analisis del archivo:  principito.txt
+    
+    Caraceteres: ====================
+    Totales:         78315
+    Sin especiales:  74479
+    
+    Palabras:  ====================
+    Totales:         13129
+    Sin stop/words:  6269   
+       Caracteres con espacios:  150
+       Caracteres sin espacios:  125
+       Palabras:  26
    ```
 
 ## Autor
