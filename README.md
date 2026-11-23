@@ -46,10 +46,11 @@ Una herramienta sencilla en Python con interfaz gráfica para seleccionar archiv
     Caraceteres: ====================
     Totales:         78315
     Sin especiales:  74479
-    
+
     Palabras:  ====================
     Totales:         13129
-    Sin stop/words:  6269   
+    Sin stop/words:  6184
+    [('principito', 203), ('dijo', 131), ('rey', 61), ('planeta', 57), ('estrellas', 48)]
 
    ```
 
