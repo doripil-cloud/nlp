@@ -10,9 +10,19 @@ from lector import seleccionar_archivo, leer_archivo
 from procesar import cuenta_palabras
 from limpieza import limpiar_texto, tokenizar, quitar_palabras_vacias
 
+def reporte(archivo, texto):
+    print("Analisis del archivo: ", archivo)
+    print()
+    print("Caraceteres:","="*20)
+    print("Totales:        ", len(texto))
+    print("Sin especiales: ", len(limpiar_texto(texto)) )
+    print()
+    print("Palabras: ","="*20)
+    print("Totales:        ", cuenta_palabras(texto))
+    print("Sin stop/words: ", len(quitar_palabras_vacias(tokenizar(texto))))
+
+
 archivo = seleccionar_archivo()
 texto = leer_archivo(archivo)
+reporte(archivo, texto)
 
-print("Caracteres con espacios: ", len(texto))
-print("Caracteres sin espacios: ", len(texto.replace(" ", "")))
-print("Palabras: ",cuenta_palabras(texto))

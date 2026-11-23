@@ -14,7 +14,8 @@ Una herramienta sencilla en Python con interfaz gráfica para seleccionar archiv
 ```text
 ├── main.py         # Punto de entrada: coordina la selección, lectura y muestra resultados
 ├── lector.py       # Módulo con interfaz gráfica (Tkinter) para seleccionar y leer el archivo
-└── procesar.py     # Módulo con la lógica para contar palabras
+├── procesar.py     # Módulo básico de contar palabras
+└── limpieza.py     # Módulo para limpiar stop/words
 ```
 
 ## Requisitos
