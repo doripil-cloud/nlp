@@ -5,12 +5,11 @@ Una herramienta sencilla en Python con interfaz gráfica para seleccionar archiv
 ## Características
 
 * **Selección visual de archivos:** Abre una ventana del explorador de archivos utilizando `tkinter` para elegir archivos (`.txt`, `.csv`, o cualquier formato).
+* **Limpieza y tokenización** Eliminacion de espacios en blanco,  caracteres especiales y stop words.
 * **Conteo de caracteres:** Calcula el total de caracteres incluyendo y excluyendo espacios en blanco.
 * **Conteo de palabras:** Analiza el contenido y devuelve el total de palabras.
+* **Estadísticas avanzadas:** Cálculo de frecuencia de palabras, cálculo de TTR(Token Type Ratio).
 * **Diseño modular:** Separación de responsabilidades entre lectura de archivos, procesamiento de datos y ejecución principal.
-*  El Type-Token Ratio (TTR) se calcula dividiendo el número de palabras únicas (types) entre el total de palabras (tokens) en el texto.
-\(\text{TTR}=\frac{\text{Palabras únicas (Types)}}{\text{Total\ de\ palabras\ (Tokens)}}\)
-El resultado es un valor entre 0 y 1 (donde 1 significa que ninguna palabra se repite).
 
 
 ## Estructura del Proyecto
@@ -54,7 +53,10 @@ El resultado es un valor entre 0 y 1 (donde 1 significa que ninguna palabra se r
     Palabras:  ====================
     Totales:         13129
     Sin stop/words:  6184
-    [('principito', 203), ('dijo', 131), ('rey', 61), ('planeta', 57), ('estrellas', 48)]
+    Palabras sin stop/words más repetidas  [('principito', 203), ('dijo', 131), ('rey', 61), ('planeta', 57), ('estrellas', 48)]
+    Tokens totales: 6184
+    Palabras únicas: 2186
+    TTR: 0.35
 
    ```
    
