@@ -53,14 +53,11 @@ Una herramienta sencilla en Python con interfaz gráfica para seleccionar archiv
     [('principito', 203), ('dijo', 131), ('rey', 61), ('planeta', 57), ('estrellas', 48)]
 
    ```
+   
 
-## Autor
 
-* **Paulina Alejandra Ramirez Olmos** - *Desarrollo inicial*
 
-# Limpieza de Datos
 
-Una herramienta sencilla en Python para limpiar un archivo de datos y dejarlo listo para el análisis correspondientes, eliminando las palabras vacían que hayan en el texto y remplazando los signos con espacios, para que no cuente palabras que estan juntas con un signo como una misma palabra.
 
 ## Características
 
@@ -90,6 +87,7 @@ print(utiles)
 # ['hoy', 'día', 'excelente', 'encanta', 'programar']
 ```
 
-## Autor
+## Autores
 
-- **Fernanda Narahi Rayas Flores** - *Código de limpieza*
+- **Fernanda Narahi Rayas Flores** - 
+- **Paulina Alejandra Ramirez Olmos** - 
