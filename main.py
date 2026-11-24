@@ -1,10 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Nov 19 20:52:45 2026
-
-@author: poly
-"""
 
 from lector import seleccionar_archivo, leer_archivo
 from procesar import cuenta_palabras, obtener_frecuencias, obtener_TTR
