@@ -20,7 +20,7 @@ def seleccionar_archivo():
     return ruta_archivo
 
 def leer_archivo( archivo ):
-    with open(archivo, "r") as file:
+    with open(archivo, "r",encoding="latin-1") as file:
         texto = file.read()
         
     return(texto)
