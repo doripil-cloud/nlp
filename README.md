@@ -64,9 +64,22 @@ Una herramienta sencilla en Python con interfaz gráfica para seleccionar archiv
     TTR: 0.33
 
    ```
-   
+# Main
+Es el punto de entrada del programa. Se ejecuta con `python main.py` y solo coordina los demás módulos, por lo que tiene muy pocas líneas.
 
+**Flujo que ejecuta:**
+1. Importa `procesar` (como `p`) y las funciones `seleccionar_archivo` y `leer_archivo` de `lector`.
+2. Llama a `seleccionar_archivo()` para que el usuario elija el archivo a analizar.
+3. Llama a `leer_archivo(archivo)` para obtener el texto.
+4. Llama a `p.reporte(archivo, texto)` para generar e imprimir el análisis completo en la terminal.
 
+# Lector
+Se encarga de la entrada de los documentos: permite al usuario elegir un archivo desde una ventana gráfica y leer su contenido como texto. No hace ningún análisis; solo entrega la ruta del archivo y su texto al resto del programa.
+
+**Funciones:**
+
+- **`seleccionar_archivo()`:** Abre el explorador de archivos con el título "Selecciona un archivo" y filtros para todos los archivos, archivos de texto (`.txt`) y archivos CSV (`.csv`). Al elegir uno, cierra la ventana de Tkinter y devuelve la ruta del archivo.
+- **`leer_archivo(archivo)`:** Abre el archivo en modo lectura con codificación `latin-1`, lee todo su contenido y lo devuelve como una sola cadena de texto.
 
 # Limpieza 
 
@@ -99,6 +112,7 @@ print(utiles)
 ```
 
 # Procesar
+Es el código que realiza el análisis del texto y genera el reporte final. Recibe el texto ya leído por `lector.py` y se apoya en `limpieza.py` (importa `limpiar_texto`, `tokenizar` y `quitar_palabras_vacias`) y en `Counter` de la librería estándar `collections`.
 
 ## Funciones
 
@@ -108,7 +122,7 @@ print(utiles)
 - **`obtener_TTR(tokens)`:** Calcula el Type-Token Ratio (palabras únicas / tokens totales), y el código puede evitar la división entre 0.
 - **`reporte(archivo, texto)`:** Imprime el reporte completo del análisis.
 
-# Diccionario de polaridad
+### Diccionario de polaridad
 
 El análisis de sentimiento básico se basa en un diccionario que asigna a cada palabra un peso entre -1.0 y 1.0. El signo indica si la palabra es positiva o negativa y su valor absoluto indica la intensidad.
 
@@ -121,7 +135,7 @@ El análisis de sentimiento básico se basa en un diccionario que asigna a cada 
    - **Positiva:** puntaje mayor a 0.
    - **Negativa:** puntaje menor a 0.
    - **Neutral:** puntaje igual a 0.
-
+  
 ## Autores
 
 - **Fernanda Narahi Rayas Flores** - 
