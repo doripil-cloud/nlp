@@ -47,16 +47,21 @@ Una herramienta sencilla en Python con interfaz gráfica para seleccionar archiv
     Analisis del archivo:  principito.txt
     
     Caraceteres: ====================
-    Totales:         78315
-    Sin especiales:  74479
+    Totales:         80391
+    Sin especiales:  76286
 
     Palabras:  ====================
     Totales:         13129
-    Sin stop/words:  6184
-    Palabras sin stop/words más repetidas  [('principito', 203), ('dijo', 131), ('rey', 61), ('planeta', 57), ('estrellas', 48)]
-    Tokens totales: 6184
-    Palabras únicas: 2186
-    TTR: 0.35
+    Sin stop/words:  6822
+    Palabras sin stop/words más repetidas  [('principito', 203), ('dijo', 131), ('mãs', 75), ('rey', 61), ('planeta', 57)]
+    Coincindencia: bueno 0.7 5
+    Coincindencia: feliz 0.8 6
+    Coincindencia: triste -0.6 8
+    Polaridad positiva
+    Polaridad final igual a : 0.9
+    Tokens totales: 6822
+    Palabras únicas: 2284
+    TTR: 0.33
 
    ```
    
