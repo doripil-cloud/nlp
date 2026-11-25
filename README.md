@@ -68,7 +68,7 @@ Una herramienta sencilla en Python con interfaz gráfica para seleccionar archiv
 
 
 
-
+# Limpieza 
 
 ## Características
 
@@ -97,6 +97,30 @@ utiles = quitar_palabras_vacias(tokens)
 print(utiles)
 # ['hoy', 'día', 'excelente', 'encanta', 'programar']
 ```
+
+# Procesar
+
+## Funciones
+
+- **`cuenta_palabras(texto)`:** Devuelve el total de palabras del texto.
+- **`obtener_frecuencias(tokens)`:** Devuelve la frecuencia de cada palabra.
+- **`analiza_polaridad(frec)`:** Compara las palabras del texto contra el diccionario de polaridad, suma los pesos de las coincidencias e imprime la polaridad final (positiva, negativa o neutral).
+- **`obtener_TTR(tokens)`:** Calcula el Type-Token Ratio (palabras únicas / tokens totales), y el código puede evitar la división entre 0.
+- **`reporte(archivo, texto)`:** Imprime el reporte completo del análisis.
+
+# Diccionario de polaridad
+
+El análisis de sentimiento básico se basa en un diccionario que asigna a cada palabra un peso entre -1.0 y 1.0. El signo indica si la palabra es positiva o negativa y su valor absoluto indica la intensidad.
+
+### ¿Cómo se calcula?
+1. El texto se limpia, se tokeniza y se le quitan las palabras vacías.
+2. Se obtiene la frecuencia de cada palabra.
+3. `analiza_polaridad` busca en el texto las palabras del diccionario e imprime cada coincidencia con su peso y número de apariciones.
+4. Se suman los pesos de las palabras encontradas para obtener el puntaje final.
+5. Según el puntaje se determina la polaridad global:
+   - **Positiva:** puntaje mayor a 0.
+   - **Negativa:** puntaje menor a 0.
+   - **Neutral:** puntaje igual a 0.
 
 ## Autores
 
